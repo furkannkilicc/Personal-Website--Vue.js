@@ -20,22 +20,22 @@ const routes = [
 
         // ]
     
-    // },
-    // {
-    //     path: '/projects',
-    //     name: 'projects',
-    //     component: () => import('./components/ChartDemo.vue')
-    // },
-    // {
-    //     path: '/contact',
-    //     name: 'contact',
-    //     component: () => import('./components/ChartDemo.vue')
-    // },
-    // {
-    //     path: '/chart',
-    //     name: 'chart',
-    //     component: () => import('./components/ChartDemo.vue')
-    // },
+    },
+    {
+        path: '/projects',
+        name: 'projects',
+        component: () => import('./components/Projects.vue')
+    },
+    {
+        path: '/contact',
+        name: 'contact',
+        component: () => import('./components/Contact.vue')
+    },
+    {
+        path: '/publications',
+        name: 'publications',
+        component: () => import('./components/Publications.vue')
+    },
     ];
 
 

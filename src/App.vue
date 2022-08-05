@@ -1,13 +1,16 @@
 <template>
+<the-header/>
 <p>hello</p> 
 </template>
 
 <script>
+import TheHeader from './components/layouts/TheHeader.vue'
 // import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
+    TheHeader
     // HelloWorld
   }
 }
