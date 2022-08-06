@@ -1,24 +1,37 @@
 <template>
   <header>
     <nav>
-      <h1>
+      <h1>Furkan Kılıç</h1>
+    <ul>
+      <li>
         <router-link to="/">Home Page</router-link>
-      </h1>
-      <ul>
+      </li>
         <li>
-          <router-link to="/Projects">All Projects</router-link>
+          <router-link to="/projects">All Projects</router-link>
         </li>
         <li>
           <router-link to="/publications"> Publications</router-link>
         </li>
         <li>
-          <Button label="Help" class="p-button-raised p-button-rounded">Contact</Button>
+          <Button label="Help" class="p-button-raised p-button-rounded" @click="contact">Contact</Button>
         </li>
-      </ul>
+    </ul>
     </nav>
   </header>
 </template>
+<script>
+export default {
+methods:{
+  contact(){
+    this.$router.push('/contact');
+  }
+}  
+}
+
+
+</script>
 <style scoped>
+
 header {
   width: 100%;
   height: 5rem;
@@ -26,6 +39,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
+  margin-left: 0;
+
 }
 
 header a {
@@ -44,12 +60,14 @@ a.router-link-active {
 
 h1 {
   margin: 0;
+  color: bisque;
 }
 
-h1 a {
+h1:hover {
   color: white;
   margin: 0;
 }
+
 
 h1 a:hover,
 h1 a:active,

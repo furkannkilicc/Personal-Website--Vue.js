@@ -5,13 +5,13 @@ const routes = [
     {
         path: '/',
         name: 'app',
-        component: App,
+        // component: App,
         // children: [
-        //     {
-        //         path: '',
-        //         name: 'dashboard',
-        //         component: () => import('./components/Dashboard.vue')
-        //     },
+            // {
+            //     path: '',
+            //     name: 'homepage',
+            //     component: () => import('./components/HomePage.vue')
+            // },]
         //     {
         //         path: '/fullcalendar',
         //         name: 'FullCalendar',
