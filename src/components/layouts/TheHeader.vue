@@ -1,7 +1,9 @@
 <template>
   <header>
     <nav>
-      <h1>Furkan Kılıç</h1>
+      <router-link to="/"  >
+      <h1 ><i class="pi pi-desktop " style="font-size: 2rem"></i>  Furkan Kılıç</h1>   
+      </router-link>
     <ul>
       <li>
         <router-link to="/">Home Page</router-link>
@@ -32,10 +34,11 @@ methods:{
 </script>
 <style scoped>
 
+
 header {
   width: 100%;
-  height: 5rem;
-  background-color: #3d008d;
+  height: 4rem;
+  background-color: var(--cyan-800);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,21 +49,22 @@ header {
 
 header a {
   text-decoration: none;
-  color: #f391e3;
+  color: var(--cyan-400);
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border: 1px solid transparent;
+  border-radius: 2rem;
 }
 
 a:active,
 a:hover,
 a.router-link-active {
-  border: 1px solid #f391e3;
+  border: 1px solid var(--cyan-50);
 }
 
 h1 {
   margin: 0;
-  color: bisque;
+  color: var(--blue-100);
 }
 
 h1:hover {

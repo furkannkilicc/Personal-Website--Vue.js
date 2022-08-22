@@ -5,7 +5,7 @@ const routes = [
     {
         path: '/',
         name: 'app',
-        // component: App,
+        // component: App, // problem buydu duplice header 2 kere çağırdık ana sayfayı 
         // children: [
             // {
             //     path: '',
