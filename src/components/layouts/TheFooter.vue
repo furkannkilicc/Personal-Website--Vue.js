@@ -10,14 +10,12 @@
           <div class="grid grid-nogutter">
             <h6>Categories</h6>
             <ul class="col-6">
-        
               <li> <router-link to="/">Home</router-link></li>
               <li> <router-link to="/projects">All Projects</router-link></li>
               <li> <router-link to="/publications">Publications</router-link></li>
               <li> <router-link to="/contact">Contacts</router-link></li>
             </ul>
           </div>
-
           <div  class="grid">
             <h6>Quick Links</h6>
             <ul class="col-5">
@@ -39,8 +37,9 @@
 
 .grid
 {
+  height: 10%;
   background-color:#26272b;
-  padding:20px 10px;
+  padding:9px 2px;
   font-size:15px;
   line-height:2px;
   color:#737373;
@@ -79,7 +78,7 @@
 }
 
 
-. a:active,.footer-links a:focus,.footer-links a:hover
+. a:active, a:focus, a:hover
 {
   color:#3366cc;
   text-decoration:none;
@@ -87,10 +86,12 @@
 .grid.inline li
 {
   display:flex;
+  padding: 2px;
 }
 
 .grid .col-6 li{
-  padding: 10px;
+  padding: 11px;
+  padding-bottom: 0;
 }
 
 

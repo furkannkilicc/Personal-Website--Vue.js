@@ -1,28 +1,30 @@
 
 <template>
+<div class="container">
+
 <!-- <div style="overflow: auto height:%100 width:%100">  -->
   <!-- SCROLL İÇİN DENEME SAYFA DOLDUĞUNDA TEST EDİLECEK -->
-
   <the-header></the-header>
-  <!-- <img class="tv" src="../public/tv.jpg"/> -->
   <router-view/>
+
   <the-footer class="footer"></the-footer>
+<!-- </div> -->
   
 
-<!-- </div> -->
+</div>
 
 </template>
 
 <script>
 import TheHeader from './components/layouts/TheHeader.vue'
-import HomePage from './components/HomePage.vue'
+// import HomePage from './components/HomePage.vue'
 import TheFooter from'./components/layouts/TheFooter.vue'
 
 
 export default {
   components: {
    'TheHeader': TheHeader,
-   'HomePage':HomePage,
+  //  'HomePage':HomePage,
    'TheFooter':TheFooter,
     // HelloWorld
   }
@@ -35,12 +37,23 @@ export default {
   box-sizing: border-box;
  
 }
+.container{
+  background-image: url(images/tv.jpg);
+   min-height: 100vh;
+    height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+
+}
 
 
 body {
   margin: 0;
-  background-image: url(images/tv.jpg);
+  height: 100%;
+  
 }
 
 .route-enter-from {
@@ -72,9 +85,5 @@ bottom: 0px;
 width: 100%;
 
 }
-tv{
-  width: 8px;
-  height: 8px;
-  position: relative;
-}
+
 </style>

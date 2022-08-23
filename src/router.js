@@ -6,12 +6,12 @@ const routes = [
         path: '/',
         name: 'app',
         // component: App, // problem buydu duplice header 2 kere çağırdık ana sayfayı 
-        // children: [
-            // {
-            //     path: '',
-            //     name: 'homepage',
-            //     component: () => import('./components/HomePage.vue')
-            // },]
+     children: [
+         {
+             path: '',
+             name: 'HomePage',
+              component: () => import('./components/HomePage.vue')
+            },]
         //     {
         //         path: '/fullcalendar',
         //         name: 'FullCalendar',
