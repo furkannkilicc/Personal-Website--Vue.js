@@ -1,6 +1,8 @@
 
 <template>
       <!-- Site footer -->
+      <!-- <div class="ftr"> -->
+
     <footer class="grid ">
         <!-- <div>  -->
           <div class="col-4 ">
@@ -32,11 +34,15 @@
           </div>
         </div>
 </footer>
+  <!-- </div> -->
 </template>
 <style scoped>
+.ftr{
 
+}
 .grid
 {
+ 
   height: 10%;
   background-color:#26272b;
   padding:9px 2px;

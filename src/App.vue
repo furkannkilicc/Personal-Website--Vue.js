@@ -80,8 +80,10 @@ body {
   transform: translateY(0);
 }
 footer{
-position: absolute;
-bottom: 0px;
+  right: 0;
+  left: 0;
+position: fixed;
+bottom: 0;
 width: 100%;
 
 }
