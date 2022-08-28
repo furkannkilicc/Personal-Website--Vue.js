@@ -28,21 +28,31 @@ any suggestion acceptable <br/> Cheers!</p>
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
   p{
       font-family: 'Oswald', sans-serif;
-      font-size: 21px;
-      font-weight:bold;
-  }
- p, h1, h2{
+      font-size: 20px;
+      font-weight:normal;
+      margin: 0 ;
+
+
+}
+
+
+  h1, h2{
   margin: 0;
 
   
 }
 .text{
     vertical-align: top;
-    display:inline-block;
+    display:absolute;
+    top: 120px;
+  right: 10px;
+  width: 300px;
+  height: 200px;
+
 }
 .photo{
     text-align: center;
-    display: inline-block;
+    display: absolute;
 }
 
 img{
@@ -52,9 +62,10 @@ img{
     height: auto;
 }
 .container{
-    display: inline-block;
+    display: relative;
     height: 100px;
     width: 100%;
+    
 }
 
 </style>
