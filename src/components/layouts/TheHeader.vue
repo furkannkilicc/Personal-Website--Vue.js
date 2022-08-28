@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="sticky top-0">
     <nav>
       <router-link to="/"  >
       <h1 ><i class="pi pi-desktop " style="font-size: 2rem"></i>  Furkan Kılıç</h1>   

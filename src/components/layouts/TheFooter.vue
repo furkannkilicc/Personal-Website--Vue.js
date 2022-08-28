@@ -1,7 +1,6 @@
 
 <template>
       <!-- Site footer -->
-      <!-- <div class="ftr"> -->
 
     <footer class="grid ">
         <!-- <div>  -->
@@ -37,9 +36,7 @@
   <!-- </div> -->
 </template>
 <style scoped>
-.ftr{
 
-}
 .grid
 {
  
