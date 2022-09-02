@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="header">
-    <img src="../images/tv2.jpg" alt="tv image for testing" />
+      <img src="../images/tv2.jpg" alt="tv image for testing" />
     </div>
     <div class="text">
       <h3 class="text-cyan-900">Hello World!</h3>
@@ -17,19 +17,19 @@
         Cheers!
       </p>
     </div>
-    
-  <div>
-    <p class="position:absolute overflow-hidden " style="clear:left width:65% margin:10px float:right">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
-      adipisci atque aperiam. Nemo dolorem facilis perferendis iste adipisci
-      tempore. Fuga illum voluptate fugit natus. Fugiat saepe dolores aspernatur
-      velit dolore?
-    </p>
-  </div>
 
-</div>
-  
-  
+    <div>
+      <p
+        class="position:absolute overflow-hidden"
+        style="clear:left width:65% margin:10px float:right"
+      >
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
+        adipisci atque aperiam. Nemo dolorem facilis perferendis iste adipisci
+        tempore. Fuga illum voluptate fugit natus. Fugiat saepe dolores
+        aspernatur velit dolore?
+      </p>
+    </div>
+  </div>
 </template>
 
 
@@ -48,7 +48,6 @@ h2 {
   margin: 0;
 }
 .text {
-
   /* vertical-align: top; */
   position: absolute;
   top: 0px;
@@ -65,19 +64,23 @@ img {
   height: 25%;
   top: 0;
   opacity: 0.22;
+   z-index: -1; /*     sayesinde image arka planda gözükecek  " stack oder anlamına gelir yüksek ise önde gözükür,
+   "*/
 }
 .container {
-    /* margin: 2em,8em;
+  align-items: baseline;
+  margin: 2em, 8em;
   position: relative;
   height: 100%;
   width: 100%;
-  min-width: 10%; */
+  min-width: 10%;
 }
-header{
- float: left;
+header {
+  float: left;
+  margin-right: 1.5em;
+  position: absolute;
   width: 25%;
+  min-width: 20%;
   padding: 1%;
-
 }
-
 </style>
