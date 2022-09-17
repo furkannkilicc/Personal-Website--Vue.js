@@ -1,86 +1,74 @@
 <template>
-  <div class="container">
-    <div class="header">
-      <img src="../images/tv2.jpg" alt="tv image for testing" />
-    </div>
-    <div class="text">
-      <h3 class="text-cyan-900">Hello World!</h3>
+  <div class="container" >
+
+    <div class="wrap">
+      <h2 class="text-cyan-900 ">Hello World!</h2>
       <h1 class="text-purple-900">Furkan Kılıç</h1>
       <h2 class="text-purple-800">Computer Engineering Student.</h2>
       <h5 style="margin: 2px">'This is My Personal Website'</h5>
-      <p>
+      <p style="font-weight:600;">
         Hi, my name is Furkan I am Computer Engineering Student(4th degree).
       </p>
-      <p>
+      <p style="font-weight:600;">
         I build for this website for practising and make progress ☺ any
         suggestion acceptable <br />
         Cheers!
       </p>
     </div>
-
     <div>
-      <p
-        class="position:absolute overflow-hidden"
-        style="clear:left width:65% margin:10px float:right"
-      >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
-        adipisci atque aperiam. Nemo dolorem facilis perferendis iste adipisci
-        tempore. Fuga illum voluptate fugit natus. Fugiat saepe dolores
-        aspernatur velit dolore?
-      </p>
+
+
+      <br/>
+
     </div>
+
   </div>
 </template>
 
+<script>
+export default {
 
+  
+  
+}
+
+
+
+</script>
 
 <style scoped>
+
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
-.text p {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
+*{
   margin: 0;
-}
+  padding: 0;
+  /* box-sizing: border-box; */
+  /* background-size: cover; Will be fix LATER  */
 
-h1,
-h2 {
-  margin: 0;
 }
-.text {
-  /* vertical-align: top; */
-  position: absolute;
-  top: 0px;
-  left: 10px;
-  width: 20%;
-  height: 100%;
-  overflow: none;
-}
+.wrap{
+  background-image: url('C:\Users\Furkan\Desktop\projectX\new-web\src\images\pexels.jpg');
 
-img {
-  /* position: absolute;  bu da çalısıyor  ama float daha mantıkı*/
-  border-radius: 1rem;
-  width: 35%;
-  height: 25%;
-  top: 0;
-  opacity: 0.22;
-   z-index: -1; /*     sayesinde image arka planda gözükecek  " stack oder anlamına gelir yüksek ise önde gözükür,
-   "*/
+  /* Set a specific height */
+  height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment:fixed;
+  background-position: center -62% ;
+  background-repeat: no-repeat;
+  background-size: 100vw 1000px;
+
+font-size:19px;
+  text-align:center;
 }
-.container {
-  align-items: baseline;
-  margin: 2em, 8em;
-  position: relative;
-  height: 100%;
+.container{
   width: 100%;
-  min-width: 10%;
+  height: 100%;
+
 }
-header {
-  float: left;
-  margin-right: 1.5em;
-  position: absolute;
-  width: 25%;
-  min-width: 20%;
-  padding: 1%;
-}
+
+
+
+
+
 </style>

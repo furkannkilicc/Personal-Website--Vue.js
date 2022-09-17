@@ -1,6 +1,25 @@
 <template>
-  <article class="firstArticle">
+<div class="grid-nogutter">
+
+  <article class="firstArticle ">
+    
+    <div class="col-12 md:col-12 lg:col sm:col-6">
+
+  
     <h1>BootstrapVue-Vuetify-PrimeVue</h1>
+    <!-- <p>     <div class="col-12 md:col-6 lg:col-3" ><img src="logo\cplusplus.png" width="24%" height="22%" alt="blabla"/></div>
+    <div class="col-2" ><img src="logo\javascript.png"   width="24%" height="22%" alt="blabla"/></div>
+    <div class="col-2" ><img src="logo\java.png"  width="24%" height="22%" alt="blabla"/></div>
+    <div class="col-2" ><img src="logo\wordpress.png" width="24%" height="22%"  alt="blabla"/></div>
+    <div class="col-2" ><img src="logo\linux.png"  width="24%" height="22%" alt="blabla"/></div>
+    <div class="col-2" ><img src="logo\Python.png" width="24%" height="22%"  alt="blabla"/></div>
+    <div class="col-2" ><img src="logo\vuejs.png" width="24%" height="22%"  alt="blabla"/></div>
+    <div class="col-2" ><img src="logo\html.png" width="24%" height="22%"  alt="blabla"/></div>
+    <div class="col-2" ><img src="logo\css.png" width="24%" height="22%"  alt="blabla"/></div>
+    <div class="col-2" ><img src="logo\vuex.png" width="24%" height="22%"  alt="blabla"/></div>
+    <div class="col-2" ><img src="logo\i8n.png" width="24%" height="22%"  alt="blabla"/></div>
+    <div class="col-2" ><img src="logo\firebase.png" width="24%" height="22%"   alt="blabla"/></div>
+    <div class="col-2" ><img src="logo\primevue.png" width="24%" height="22%"   alt="blabla"/></div> </p> -->
     <p>
       Öncelikle yazımıza Vue.js’ nin ne olduğu ile başlayacağız. Vue.js
       interaktif web arayüzleri oluşturmak ve tek sayfa web uygulamaları
@@ -262,7 +281,10 @@
  <p><strong>ref:</strong> https://medium.com/@furkannkilicc/bootstrapvue-vuetify-primevue-eb677cf1d874</p>
     <i class="pi pi-check"></i>
     <i class="pi pi-times"></i>
+      </div>
   </article>
+</div>
+
 </template>
 <style scoped>
 .firstArticle {
@@ -281,7 +303,7 @@ h1 {
   margin: 2px;
 }
 p {
-  font-size: 18.8px;
+  font-size: 22px;
   margin-left: 8rem;
   margin-right: 6rem;
   font-weight: normal;
