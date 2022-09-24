@@ -1,9 +1,23 @@
+
 <template>
-  <div class="heading mt-0">
-    <h1>SKILLS</h1>
-    <h4>HERE IS MY SKILLS</h4>
-  </div>
-  <div v-for="(skills, index) in skillData" :key="index" :image="tech.image"></div>
+  <section>
+    <div class="heading mt-0 text-center">
+      <h1>SKILLS</h1>
+      <h4>HERE IS MY SKILLS</h4>
+    </div>
+    <hr />
+    <div class="grid grid-nogutter">
+      <div v-for="(i, index) in skillData.tech" :key="index">
+        <div class="col-12 text-3xl">
+          <i :class="i.image"></i>
+        </div>
+        <div class="font-semibold">
+          {{ i.title }}
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
   <!--
 <div class="col" v-for="(skill, index) in skills" :key="index">
     <div class="row">
@@ -18,33 +32,36 @@
   <!-- <img :src="getImgUrl(skill)" loading="lazy" /> -->
   <!-- IMG LOADING LAZY***  -->
 
-  <!-- <p>     <div class="col-12 md:col-6 lg:col-3" ><img src="logo\cplusplus.png" width="24%" height="22%" alt="blabla"/></div>
-    <div class="col-2" ><img src="logo\javascript.png"   width="24%" height="22%" alt="blabla"/></div>
-    <div class="col-2" ><img src="logo\java.png"  width="24%" height="22%" alt="blabla"/></div>
-    <div class="col-2" ><img src="logo\wordpress.png" width="24%" height="22%"  alt="blabla"/></div>
-    <div class="col-2" ><img src="logo\linux.png"  width="24%" height="22%" alt="blabla"/></div>
-    <div class="col-2" ><img src="logo\Python.png" width="24%" height="22%"  alt="blabla"/></div>
-    <div class="col-2" ><img src="logo\vuejs.png" width="24%" height="22%"  alt="blabla"/></div>
-    <div class="col-2" ><img src="logo\html.png" width="24%" height="22%"  alt="blabla"/></div>
-    <div class="col-2" ><img src="logo\css.png" width="24%" height="22%"  alt="blabla"/></div>
-    <div class="col-2" ><img src="logo\vuex.png" width="24%" height="22%"  alt="blabla"/></div>
-    <div class="col-2" ><img src="logo\i8n.png" width="24%" height="22%"  alt="blabla"/></div>
-    <div class="col-2" ><img src="logo\firebase.png" width="24%" height="22%"   alt="blabla"/></div>
-    <div class="col-2" ><img src="logo\primevue.png" width="24%" height="22%"   alt="blabla"/></div> </p> -->
-</template>
+ 
 <script>
-import Skills from "../SkillDev.json";
+import Skills from "../store/SkillDev.json";
 export default {
-  name: "Skills",
+  name: "MySkills",
+  // components:{
+
+  //   Skills: "Skills"
+
+  // },
 
   data() {
     return {
       skillData: Skills,
     };
   },
-  methods: {
-    //  getImgUrl(img) {
-    //     return './public/logo'+img }
-  },
+  // methods: {
+  //  getImgUrl(img) {
+  //     return './public/logo'+img }
+  // },
 };
 </script>
+
+<style scoped>
+hr {
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  border-bottom-color: #bbb;
+  opacity: 0.6;
+  width: 50vw;
+}
+</style>

@@ -1,7 +1,8 @@
 <template>
-  <div class="container" >
+<div class="grid"></div>
+  <div class="col" >
 
-    <div class="wrap">
+    <div class="wrap  ">
       <h2 class="text-cyan-900 ">Hello World!</h2>
       <h1 class="text-purple-900">Furkan Kılıç</h1>
       <h2 class="text-purple-800">Computer Engineering Student.</h2>
@@ -15,20 +16,29 @@
         Cheers!
       </p>
     </div>
-    <div>
+    <div class="col-12">
+    <my-skills/>
 
 
       <br/>
+      <br/>
+      <br/>
 
-    </div>
+    </div> 
+    
 
   </div>
 </template>
 
 <script>
+import MySkills from '../pages/MySkills.vue'
+
 export default {
 
-  
+  components:{
+
+        'MySkills': MySkills,
+    },
   
 }
 
@@ -54,18 +64,15 @@ export default {
 
   /* Create the parallax scrolling effect */
   background-attachment:fixed;
-  background-position: center -62% ;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100vw 1000px;
+  background-size: 100%;
+  background-position-y: 81%;
 
 font-size:19px;
   text-align:center;
 }
-.container{
-  width: 100%;
-  height: 100%;
 
-}
 
 
 

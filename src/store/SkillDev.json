@@ -1,0 +1,43 @@
+
+    {"tech":[
+        {
+            "title": "Vue",
+            "image": "devicon-vuejs-plain"
+        },
+        {
+        "title": "JavaScript",
+        "image": "devicon-javascript-plain"
+    },
+               
+        {
+        "title": "HTML5",
+        "image": "devicon-html5-plain"
+    },
+    {
+        "title": "WordPress",
+        "image": "devicon-wordpress-plain"
+    },
+    {
+        "title": "Linux",
+         "image": "devicon-linux-plain"
+    },
+    {
+        "title": "Python",
+        "image":"devicon-python-plain"
+    },
+    {
+        "title": "Java",
+        "image": "devicon-java-plain"
+    },
+    {
+        "title": "Firebase",
+        "image":"devicon-firebase-plain"
+    },   {
+        "title": "MySQL",
+        "image":"devicon-mysql-plain"
+    },   {
+        "title": "Python",
+        "image":"devicon-python-plain"
+    }
+]
+    }

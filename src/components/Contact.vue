@@ -2,15 +2,6 @@
 
             <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" /> -->
           
-            <i class="devicon-linux-plain colored"></i>
-            
-            <i class="devicon-vuejs-plain-wordmark"></i>
-            
-            <i class="devicon-vuejs-line-wordmark"></i>
-             
-          <MySkills></MySkills>
-          
-          
 
 <div>
     <base-card>
@@ -41,11 +32,9 @@
 </template>
 <script>
 import BaseCard from './ui/BaseCard.vue'
-import MySkills from '../pages/MySkills.vue'
 
 export default{
     components: BaseCard,
-    MySkills,
     data(){
         return{
             value:{

@@ -1,28 +1,25 @@
 <template>
-<div class="div">
+  <div class="grid grid-nogutter">
+    <div
+      class="col sm:col-2 xl:col-12"
+      v-for="(item, key) in myJson"
+      :key="key"
+    >
+      {{ item }}
+    </div>
+  </div>
 
-  <div v-for="item in myJson">{{item}}</div>
-</div>
-<div class="grid">
-    <div class="col-3" ></div>
-    
-
-</div>
-
-<!-- <img src="/logo/i8n.png" alt=""> -->
-
+  <!-- <img src="/logo/i8n.png" alt=""> -->
 </template>
 
 
 <script>
-import tm from "./layouts/article.json"
+import tm from "./layouts/article.json";
 export default {
-    data(){
-        return{
-            myJson:tm
-        };
-    }
-    }
-
-
+  data() {
+    return {
+      myJson: tm,
+    };
+  },
+};
 </script>
