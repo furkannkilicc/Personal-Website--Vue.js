@@ -2,9 +2,9 @@
 <template>
       <!-- Site footer -->
 
-    <footer class="grid ">
+    <footer class="grid  ">
         <!-- <div>  -->
-          <div class="col-4 ">
+          <div class="col lg-col-12 sm-col-2 md-col-6">
             <h6>About</h6>
             <p class="text-justify">Im Furkan Kilic Computer Engineer,i build this website display my projects and ability. </p>
           </div>

@@ -2,8 +2,9 @@
 <div class="grid-nogutter">
 
   <article class="firstArticle ">
-    
-    <div class="col-12 md:col-12 lg:col sm:col-6">
+    <div class="grid-nogutter">
+
+    <div class="col-12 md:col-12 lg:col sm:col-6 overflow-auto">
 
   
     <h1>BootstrapVue-Vuetify-PrimeVue</h1>
@@ -282,8 +283,10 @@
     <i class="pi pi-check"></i>
     <i class="pi pi-times"></i>
       </div>
+    </div>
   </article>
 </div>
+
 
 </template>
 <style scoped>

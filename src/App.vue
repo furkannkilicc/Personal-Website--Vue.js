@@ -1,13 +1,13 @@
 
 <template>
 <div class=" grid-nogutter container" >
-  <div class="col-12">
+  <div class="col-12 md:col-6 lg:col-12 sm-col-2">
 
 
 <!-- <div style="overflow: auto height:%100 width:%100">  -->
   <!-- SCROLL İÇİN DENEME SAYFA DOLDUĞUNDA TEST EDİLECEK -->
   <the-header></the-header>
-  <router-view/>
+  <router-view />
   
 
   <the-footer class="footer"></the-footer>
@@ -59,7 +59,7 @@ html
   background-attachment: relative;
   /* background-position: center; */
   /* background-repeat: no-repeat; */
-  background-size: auto;
+  background-size: cover;
 
 
 }
