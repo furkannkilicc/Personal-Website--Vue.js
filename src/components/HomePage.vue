@@ -57,7 +57,7 @@ export default {
 
 }
 .wrap{
-  background-image: url('C:\Users\Furkan\Desktop\projectX\new-web\src\images\pexels.jpg');
+  background-image: url(@/images/pexels.jpg);
 
   /* Set a specific height */
   height: 600px;
