@@ -50,6 +50,13 @@
 
 
 }
+@media (max-width:1200px){
+.grid{
+  display: none
+}
+
+}
+
 .grid hr
 {
   margin: 0;

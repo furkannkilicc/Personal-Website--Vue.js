@@ -14,7 +14,7 @@ import Button from 'primevue/button';
 import InputText from 'primevue/inputtext';
 import Textarea from 'primevue/textarea';
 import ScrollPanel from 'primevue/scrollpanel';
-
+import Message from 'primevue/message';
 
 
 const app = createApp(App);
@@ -23,7 +23,7 @@ app.use(router);
 app.use(PrimeVue);
 
 
-
+app.component('Message',Message);
 app.component('Button',Button);
 app.component('InputText',InputText);
 app.component('Textarea',Textarea);
