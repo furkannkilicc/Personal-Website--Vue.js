@@ -62,6 +62,7 @@ export default {
     },
     
   },
+  //
   // this.value.name='',
   //  this.value.mail='',
   //  this.value.info=''
