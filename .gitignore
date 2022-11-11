@@ -3,9 +3,9 @@ node_modules
 /dist
 
 
-#fotiks
-resim/
-foto.txt
+#firebase
+firebase/
+firebaseConfig.js
 
 
 # local env files
