@@ -2,17 +2,9 @@
 node_modules
 /dist
 
-
-### Firebase ###
-.idea
-**/node_modules/*
-**/.firebaserc
-
-### Firebase Patch ###
-.runtimeconfig.json
-.firebase/
-
-
+#pass
+ password/
+ password.txt
 
 # local env files
 .env.local
