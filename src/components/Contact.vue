@@ -27,9 +27,10 @@
         
     </form>
     <!-- textarea boşsa hata döndür|| 'vuelidate' -->
+        
   </div>
-  <div>
-          <Message v-show="succes">Mesajınız Başarı ile Gönderilmiştir!</Message>
+   <div v-if="done">
+          <Message severity="success" >Mesajınız Başarı ile Gönderilmiştir!</Message>
         </div>
 </template>
 
@@ -47,18 +48,19 @@ export default {
       name: null,
       mail: null,
       info: null,
-      success: false
+      done: false
     };
   },
   methods: {
     async onSubmit() {
- await addDoc(collection(db, 'iletisim'), {
+ await addDoc(collection(db, 'contact'), {
   name: this.name,
   mail: this.mail,
   info: this.info
-}).then(this.name='',this.mail='',this.info='', this.succes=true);
+}).then(()=>{
+  return this.name='',this.mail='',this.info='',this.done = true});
      
-
+    
     },
     
   },
