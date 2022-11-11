@@ -2,9 +2,11 @@
 node_modules
 /dist
 
-#pass
- password/
- password.txt
+
+#fotiks
+resim/
+foto.txt
+
 
 # local env files
 .env.local
