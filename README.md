@@ -1,5 +1,6 @@
 # new-web
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4a7a7ced-7cef-40dc-9f24-e6f0acc6df14/deploy-status)](https://app.netlify.com/sites/furkankilic/deploys)
+[![Netlify Status]
+https://furkankilic.netlify.app/#/
 
 ## Project setup
 ```
